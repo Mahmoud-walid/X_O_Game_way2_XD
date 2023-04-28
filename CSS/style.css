@@ -1,0 +1,96 @@
+/* Start Global styles */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.bg_patern {
+    position: fixed;
+    z-index: -100;
+    width: 100vw;
+    height: 100vh;
+    background: url(../images/cool-background.png);
+    filter: blur(4px);
+}
+
+/* End Global styles */
+
+.game {
+    width: 300px;
+    margin: auto;
+    border: 2px solid #f06566;
+    text-align: center;
+    padding: 20px;
+}
+
+.title {
+    color: rgb(255, 128, 0);
+    font-size: 10px;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.display {
+    color: rgb(218, 83, 83);
+    font-size: 25px;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.hide {
+    display: none;
+}
+
+.container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    max-width: 300px;
+}
+
+.tile {
+    border: 1px solid rgb(255, 149, 0);
+    max-width: 100px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.playerX {
+    color: rgb(0, 95, 139);
+}
+
+.playerO {
+    color: rgb(83, 132, 0);
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+#reset {
+    background-color: #f06566;
+    color: #ff88f7;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    font-size: 20px;
+    margin-left: 1em;
+    cursor: pointer;
+}
